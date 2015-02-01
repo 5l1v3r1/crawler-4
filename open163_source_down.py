@@ -105,7 +105,7 @@ for name1, mov_url2, name2 in mov_list:
                 print '[-] wget error' , mov_list_single
                 print mov_name
                 #raw_input('[+] check.')
-        if down_num < 8:pass
+        if down_num > 8:pass
         else:sys.exit('check your network, or maybe that websize was down.')
                 
         mov_name = mov_name + ".mp4"
