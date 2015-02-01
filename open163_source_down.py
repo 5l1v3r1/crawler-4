@@ -101,6 +101,7 @@ for name1, mov_url2, name2 in mov_list:
                 fin = urllib2.urlopen(mov_url3,timeout=timeout).read()
                 down_num = 10
             except:
+                down_num += 1
                 print 'retry:', down_num
                 print '[-] wget error' , mov_list_single
                 print mov_name
